@@ -1,0 +1,35 @@
+echo "raju: Bhag yaha se"
+
+echo "Chatur: Peechle buttis saal se inhone nirantar is college mein"
+
+echo "Raju: rancho aaj date kya hai?"
+
+echo "Rancho: $(date)"
+
+echo "Farhan: mujhe system ki space and ram dekhni hai"
+
+echo "Rancho: Disk: $(df -h | awk 'NR==3 {print $2}') & RAM $(free -h | awk 'NR==2 {print $2}')"
+
+
+#rank=1
+
+#read rank
+
+echo "raju ki rank thi $1"
+
+echo "farhan ki rank thi $2"
+
+echo "rancho ki rank thi $3"
+
+echo "chatur ki rank thi $4"
+
+if [ $1 -eq "1" ]; then
+        echo "raju is topper"
+elif [ $2 -eq "1" ]; then
+        echo "Ferhan is topper"
+elif [ $3 -eq "1" ]; then
+        echo "Rancho is topper"
+elif [ $4 -eq "1" ]; then
+        echo "chatur is topper"
+
+fi
